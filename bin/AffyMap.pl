@@ -300,10 +300,20 @@ Brian Abernathy
  -q --query         query probe config file (required)
                       created by AffyConfigGen.pl
 
+                      1 genotype per line
+                      format: file<tab>file_GT<tab>GT_label
+                      GT labels are optional
+
+                      example lines below
+                      /my/affy/probes1.txt  geno1.CEL_call_code geno1
+                      /my/affy/probes1.txt  geno2.CEL_call_code geno2
+                      ...
+                      /my/affy/probesX.txt  genoX.CEL_call_code genoX
+
  --iupac            iupac scores file (required)
                       csv format, see provided file for details
 
- -a --alns          number of best scoring alignments to display
+ -a --alns          number of most similar alignments to display
                       default: 3
 
  --allele_a_label   query allele A column label
