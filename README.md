@@ -4,7 +4,7 @@ AffyMap is able to index and align Affymetrix microarray datasets produced by th
 
 ## basic usage
 
-- Input microarray data files, genotypes and genotype labels are defined in a config file. Config files can be created manually or automatically using [AffyConfig.pl](https://github.com/brianabernathy/AffyMap/blob/main/bin/AffyConfig.pl "AffyConfig.pl").
+- Input microarray data files, genotypes and genotype labels are defined in a config file. Config files can be created manually or automatically using [AffyConfig.pl](https://github.com/brianabernathy/AffyMap/blob/main/bin/AffyConfig.pl "AffyConfig.pl"). Config files make it easier to include selected genotypes from multiple files in either the reference index or query.
 
 - The reference config file and indexing options are provided to [AffyIndex.pl](https://github.com/brianabernathy/AffyMap/blob/main/bin/AffyIndex.pl "AffyIndex.pl") to generate a reference index.
 
