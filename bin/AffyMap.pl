@@ -294,8 +294,6 @@ Brian Abernathy
 
 =head1 OPTIONS
 
-=head2 input
-
  -r --ref           reference index file (required)
                       created by AffyIndex.pl
 

@@ -181,8 +181,6 @@ Brian Abernathy
 
 =head1 OPTIONS
 
-=head2 input
-
  -p --probe   probe file (required)
 
  -g --gt      genotype pattern
