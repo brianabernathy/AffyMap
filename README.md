@@ -41,6 +41,8 @@ Options:
 
      -h --help    display help menu
 
+---
+
 ### AffyIndex.pl 
 
 Usage:
@@ -110,6 +112,8 @@ Options:
   help:
 
      -h --help          display help menu
+
+---
 
 ### AffyMap.pl
 
