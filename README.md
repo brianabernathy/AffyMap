@@ -64,7 +64,8 @@ Options:
 
   filtering:
 
-    By default, no filtering is performed. However, it is recommended to enable all options below for optimal results.
+    By default, no filtering is performed. However, it is recommended to
+    enable appropriate filtering options below for optimal results.
 
      --monomorphic      filter monomorphic probes
 
