@@ -50,6 +50,7 @@ Usage:
 Options:
 
   input:
+
      -c --config        probe config file (required)
                           1 genotype per line
                           format: file<tab>file_GT<tab>GT_label
@@ -62,6 +63,7 @@ Options:
                           /my/affy/probesX.txt      genoX.CEL_call_code     genoX
 
   filtering:
+
     By default, no filtering is performed. However, it is recommended to enable all options below for optimal results.
 
      --monomorphic      filter monomorphic probes
@@ -84,6 +86,7 @@ Options:
                           1 genotype per line
 
   column labels:
+
      --maf_label        minor allele frequency column label
                           default: MinorAlleleFrequency
 
@@ -96,6 +99,7 @@ Options:
                           default: Allele_B
 
   output:
+
      --invalid_call     invalid call value
                           default: 'na'
 
@@ -103,6 +107,7 @@ Options:
                           list all filtered probes and GTs, etc...
 
   help:
+
      -h --help          display help menu
 
 ### AffyMap.pl
