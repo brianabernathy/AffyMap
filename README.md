@@ -2,7 +2,7 @@
 
 AffyMap is able to index and align Affymetrix microarray datasets produced by the [Axiom Analysis Suite](https://www.thermofisher.com/us/en/home/technical-resources/software-downloads/axiom-analysis-suite.html "Axiom Analysis Suite").
 
-## basic usage
+## usage overview
 
 - Input microarray data files, genotypes and genotype labels are defined in a config file. Config files can be created manually or automatically using [AffyConfig.pl](https://github.com/brianabernathy/AffyMap/blob/main/bin/AffyConfig.pl "AffyConfig.pl"). Config files make it easier to include selected genotypes from multiple files in either the reference index or query.
 
