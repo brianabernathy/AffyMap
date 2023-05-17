@@ -44,8 +44,6 @@ sub parse_probes {
 
 	open(PROBES, '<', $probe_file) or error("can't read $probe_file: $!");
 
-#print(STDERR "processing $probe_file\n");
-
 	while (my $line = <PROBES>) {
 		if ($line =~ /^#/) {
 			next();
@@ -63,7 +61,6 @@ sub parse_probes {
 				if (defined($config_ref)) {
 					if (exists($$config_ref{$probe_file}{$val})) {
 						$col_labels{$index} = $$config_ref{$probe_file}{$val};
-#print(STDERR "file: $probe_file\tgt: $gt\tlabel: $$config_ref{$probe_file}{$gt}\n");
 					}
 				}
 
@@ -105,7 +102,6 @@ sub parse_probes {
 			if (! defined($format)) {
 				error("file format cannot be determined, column: $col_labels{$col_index}, call: \"$call\"");
 			}
-#print(STDERR "format: $format\n");
 
 			if ($format eq 'num' || $format eq 'ab') {
 				if (! defined($allele_a_index)) {
@@ -144,13 +140,6 @@ sub parse_probes {
 			else {
 				$iupac_call = convert_iupac($call, $cols[$allele_a_index], $cols[$allele_b_index]);
 			}
-
-#if (! defined($iupac_call) || $iupac_call eq '') {
-#	print(STDERR "convert_iupac($call, $cols[$allele_a_index], $cols[$allele_b_index])\n");
-#}
-#else {
-#	print(STDERR "call: $call\tiupac: $iupac_call\n");
-#}
 
 			$$probes_ref{$probe_id}{$col_labels{$index}} = $iupac_call;
 		}
