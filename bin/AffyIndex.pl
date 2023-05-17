@@ -421,7 +421,7 @@ Brian Abernathy
 =head2 filtering
 
 By default, no filtering is performed. However, it is recommended to
-enable all options below for optimal results.
+enable appropriate filtering options below for optimal results.
 
  --monomorphic      filter monomorphic probes
 
