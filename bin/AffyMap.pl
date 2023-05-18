@@ -46,7 +46,7 @@ sub print_results {
 	print(STDOUT '#query');
 
 	foreach my $index (1..$max_alns) {
-		print(STDOUT "\tref${index}\tref${index}%");
+		print(STDOUT "\tref${index}\tref${index}_id%");
 	}
 
 	print(STDOUT "\n");
