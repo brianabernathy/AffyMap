@@ -4,11 +4,15 @@ AffyMap is able to index and align Affymetrix microarray datasets produced by th
 
 ## usage overview
 
-- Input microarray data files, genotypes and genotype labels are defined in a config file. Config files can be created manually or automatically using [AffyConfig.pl](https://github.com/brianabernathy/AffyMap/blob/main/bin/AffyConfig.pl "AffyConfig.pl"). Config files make it easier to include selected genotypes from multiple files in either the reference index or query.
+- Input microarray data (probe) files, genotypes and genotype labels are defined in a config file. Config files can be created manually or automatically using [AffyConfig.pl](https://github.com/brianabernathy/AffyMap/blob/main/bin/AffyConfig.pl "AffyConfig.pl"). Config files make it easier to include selected genotypes from multiple files in either the reference index or query.
 
 - The reference config file and indexing options are provided to [AffyIndex.pl](https://github.com/brianabernathy/AffyMap/blob/main/bin/AffyIndex.pl "AffyIndex.pl") to generate a reference index.
 
 - The reference index file, query config file, [scoring matrix](https://github.com/brianabernathy/AffyMap/blob/main/misc/iupac.scores.csv "scoring matrix") and mapping options are provided to [AffyMap.pl](https://github.com/brianabernathy/AffyMap/blob/main/bin/AffyMap.pl "AffyMap.pl") to compare genotype data. For each query genotype, a set of the most similar reference genotypes are listed.
+
+- [AffyIndex.pl](https://github.com/brianabernathy/AffyMap/blob/main/bin/AffyIndex.pl "AffyIndex.pl") and [AffyMap.pl](https://github.com/brianabernathy/AffyMap/blob/main/bin/AffyMap.pl "AffyMap.pl") can automatically detect and read probe files in AB, nucleotide, numeric or IUPAC formats. The reference index and query genotype calls will be converted to IUPAC format prior to alignment.
+
+- Alignment scores are assigned using the provided [scoring matrix](https://github.com/brianabernathy/AffyMap/blob/main/misc/iupac.scores.csv "scoring matrix") based on IUPAC pair probabilities. User-defined scoring matrices can also be used to provide custom scoring.
 
 - Detailed command options are available by running the command without options or the -h or --help option. [Command options](https://github.com/brianabernathy/AffyMap#commandoptions "command options") are also listed below.
 
