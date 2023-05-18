@@ -12,6 +12,8 @@ AffyMap is able to index and align Affymetrix microarray datasets produced by th
 
 - Detailed command options are available by running the command without options or the -h or --help option. [Command options](https://github.com/brianabernathy/AffyMap#commandoptions "command options") are also listed below.
 
+[flowchart](flowchart.png "flowchart")
+
 ## test data
 
 coming soon...
