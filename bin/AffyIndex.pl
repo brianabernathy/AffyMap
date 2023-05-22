@@ -141,8 +141,8 @@ sub filter_probes_gts {
 			my $miss_probe_count = 0;
 
 			foreach my $call (keys %probe_calls) {
-				if ($call eq 'N' || $call eq $invalid_call) {
-					$miss_probe_count++;
+				if ($call eq '-' || $call eq $invalid_call) {
+					$miss_probe_count += $probe_calls{$call};
 				}
 			}
 
